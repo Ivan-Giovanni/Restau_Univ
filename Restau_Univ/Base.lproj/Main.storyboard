@@ -96,6 +96,9 @@
                                         <rect key="frame" x="16" y="162" width="361" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Enregistrement"/>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="GEQ-Gh-s4n" eventType="touchUpInside" id="UGg-xi-pRJ"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Tv-MW-2od" userLabel="PasswordTextField">
                                         <rect key="frame" x="16" y="108" width="361" height="34"/>
@@ -131,6 +134,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="S'enregistrer" id="K6i-tD-OaR"/>
                     <connections>
+                        <outlet property="emailTextField" destination="RyH-GR-nCu" id="dvJ-Pe-zHn"/>
+                        <outlet property="passwordTextField" destination="9Tv-MW-2od" id="BXt-mw-etb"/>
                         <segue destination="3QV-Ty-ZPe" kind="show" identifier="goToHomePage" id="ZZb-C2-WyP"/>
                     </connections>
                 </viewController>
@@ -169,6 +174,9 @@
                                         <rect key="frame" x="16" y="162" width="361" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Connexion"/>
+                                        <connections>
+                                            <action selector="logInButtonPressed:" destination="3ZE-nq-jzD" eventType="touchUpInside" id="s6u-7g-xdx"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2Q-YS-QdT" userLabel="EmailTextField">
                                         <rect key="frame" x="16" y="54" width="361" height="34"/>
@@ -209,6 +217,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Se Connecter" id="F0G-ie-30z"/>
                     <connections>
+                        <outlet property="emailTextField" destination="B2Q-YS-QdT" id="iQY-z3-ML2"/>
+                        <outlet property="passwordTextField" destination="vSb-dO-WuG" id="FR5-Pl-0qC"/>
                         <segue destination="3QV-Ty-ZPe" kind="show" identifier="goToHomePage" id="u7V-v9-y7R"/>
                     </connections>
                 </viewController>
@@ -258,7 +268,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u7V-v9-y7R"/>
+        <segue reference="ZZb-C2-WyP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="house" catalog="system" width="128" height="104"/>
