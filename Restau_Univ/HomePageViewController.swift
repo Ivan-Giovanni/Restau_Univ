@@ -7,14 +7,14 @@
 
 import UIKit
 
-class HomePageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource   {
+class HomePageViewController: UITableViewController {
 
-    @IBOutlet var table : UITableView!
-    
     var models = [Model]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: Attaching Images to the CollectionView
         
         models.append(Model(text: "First", imageName: "Image1"))
         models.append(Model(text: "Second", imageName: "Image2"))
@@ -29,24 +29,21 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
         models.append(Model(text: "Swift", imageName: "Image11"))
         models.append(Model(text: "Rock", imageName: "Image12"))
 
-        table.register(CollectionTableViewCell.nib(), forCellReuseIdentifier: CollectionTableViewCell.identifier)
-        table.delegate = self
-        table.dataSource = self
-        
+        tableView.register(CollectionTableViewCell.nib(), forCellReuseIdentifier: CollectionTableViewCell.identifier)
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as! CollectionTableViewCell
         cell.configure(with: models)
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 250.0
     }
 
@@ -61,5 +58,5 @@ struct Model {
         self.text = text
         self.imageName = imageName
     }
-    
+
 }

@@ -15,7 +15,6 @@
 		CBEBF30C299E4E5600F5F72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEBF30B299E4E5600F5F72D /* Assets.xcassets */; };
 		CBEBF316299E7D2E00F5F72D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBF315299E7D2E00F5F72D /* LogInViewController.swift */; };
 		CBEBF318299E7D4E00F5F72D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBF317299E7D4E00F5F72D /* RegisterViewController.swift */; };
-		CBEBF31B299F852000F5F72D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBF319299F852000F5F72D /* HomePageViewController.swift */; };
 		CBEBF321299F88B800F5F72D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CBEBF320299F88B800F5F72D /* FirebaseAnalytics */; };
 		CBEBF323299F88B800F5F72D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = CBEBF322299F88B800F5F72D /* FirebaseAnalyticsOnDeviceConversion */; };
 		CBEBF325299F88B800F5F72D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBEBF324299F88B800F5F72D /* FirebaseAnalyticsSwift */; };
@@ -48,6 +47,7 @@
 		CBEBF363299FC90900F5F72D /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBEBF361299FC90900F5F72D /* CollectionTableViewCell.xib */; };
 		CBEBF366299FC95200F5F72D /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBF364299FC95200F5F72D /* MyCollectionViewCell.swift */; };
 		CBEBF367299FC95200F5F72D /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBEBF365299FC95200F5F72D /* MyCollectionViewCell.xib */; };
+		CBEBF369299FFC7100F5F72D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBF368299FFC7100F5F72D /* HomePageViewController.swift */; };
 		FD1096F90DD999D9852464B0 /* Pods_Restau_Univ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D816B9AEF21E1F5608175871 /* Pods_Restau_Univ.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,12 +63,12 @@
 		CBEBF30B299E4E5600F5F72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Assets.xcassets; sourceTree = "<group>"; };
 		CBEBF315299E7D2E00F5F72D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CBEBF317299E7D4E00F5F72D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		CBEBF319299F852000F5F72D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		CBEBF356299F8C7F00F5F72D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CBEBF360299FC90900F5F72D /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		CBEBF361299FC90900F5F72D /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		CBEBF364299FC95200F5F72D /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBEBF365299FC95200F5F72D /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		CBEBF368299FFC7100F5F72D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		D816B9AEF21E1F5608175871 /* Pods_Restau_Univ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restau_Univ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9AB898767665D435FE38F0B /* Pods-Restau_Univ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restau_Univ.debug.xcconfig"; path = "Target Support Files/Pods-Restau_Univ/Pods-Restau_Univ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,7 +157,7 @@
 				CBEBF2FB299E4E0900F5F72D /* WelcomeViewController.swift */,
 				CBEBF315299E7D2E00F5F72D /* LogInViewController.swift */,
 				CBEBF317299E7D4E00F5F72D /* RegisterViewController.swift */,
-				CBEBF319299F852000F5F72D /* HomePageViewController.swift */,
+				CBEBF368299FFC7100F5F72D /* HomePageViewController.swift */,
 				CBEBF2FD299E4E0900F5F72D /* Main.storyboard */,
 				CBEBF30B299E4E5600F5F72D /* Assets.xcassets */,
 				CBEBF302299E4E0C00F5F72D /* LaunchScreen.storyboard */,
@@ -338,8 +338,8 @@
 				CBEBF316299E7D2E00F5F72D /* LogInViewController.swift in Sources */,
 				CBEBF318299E7D4E00F5F72D /* RegisterViewController.swift in Sources */,
 				CBEBF366299FC95200F5F72D /* MyCollectionViewCell.swift in Sources */,
-				CBEBF31B299F852000F5F72D /* HomePageViewController.swift in Sources */,
 				CBEBF2FC299E4E0900F5F72D /* WelcomeViewController.swift in Sources */,
+				CBEBF369299FFC7100F5F72D /* HomePageViewController.swift in Sources */,
 				CBEBF2F8299E4E0900F5F72D /* AppDelegate.swift in Sources */,
 				CBEBF2FA299E4E0900F5F72D /* SceneDelegate.swift in Sources */,
 				CBEBF362299FC90900F5F72D /* CollectionTableViewCell.swift in Sources */,
