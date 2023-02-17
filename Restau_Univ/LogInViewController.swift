@@ -30,6 +30,16 @@ class LogInViewController: UIViewController {
             (user, error) in
             
             if error != nil {
+                
+                let alert = UIAlertController(title: "Erreur!", message: "Email ou Mot de Passe Invalide! Vérifier à Nouveau.", preferredStyle: .alert)
+                let action = UIAlertAction(title: "Réessayez", style: .default) {
+                    (action) in
+                }
+                
+                alert.addAction(action)
+                
+                self.present(alert, animated: true, completion: nil)
+                
                 print("Error log in user")
             }
             else {

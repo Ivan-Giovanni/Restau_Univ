@@ -30,6 +30,16 @@ class RegisterViewController: UIViewController {
             (user, error) in
             
             if error != nil {
+                
+                let alert = UIAlertController(title: "Erreur!", message: "Ces Identifiants Correspondent déjà à un Utilisateur Existant! Réessayez à Nouveau", preferredStyle: .alert)
+                let action = UIAlertAction(title: "Réessayez", style: .default) {
+                    (action) in
+                }
+                
+                alert.addAction(action)
+                
+                self.present(alert, animated: true, completion: nil)
+                
                 print("Error registering user \(error!)")
             }
             else {
