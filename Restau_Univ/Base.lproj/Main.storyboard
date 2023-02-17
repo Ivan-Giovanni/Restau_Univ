@@ -130,10 +130,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="S'enregistrer" id="K6i-tD-OaR"/>
+                    <connections>
+                        <segue destination="3QV-Ty-ZPe" kind="show" identifier="goToHomePage" id="ZZb-C2-WyP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wc-sa-RXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2100" y="310.56338028169017"/>
+        </scene>
+        <!--HomePageViewController-->
+        <scene sceneID="ZUl-ai-vXI">
+            <objects>
+                <viewController title="HomePageViewController" id="3QV-Ty-ZPe" customClass="HomePageViewController" customModule="Restau_Univ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OpB-46-ekr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TgN-im-fGT"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ew0-dx-fiu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiE-Dl-lfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3121" y="3"/>
         </scene>
         <!--LogInViewController-->
         <scene sceneID="56F-PW-rmU">
@@ -189,6 +208,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Se Connecter" id="F0G-ie-30z"/>
+                    <connections>
+                        <segue destination="3QV-Ty-ZPe" kind="show" identifier="goToHomePage" id="u7V-v9-y7R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JtN-nM-GAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -235,10 +257,16 @@
             <point key="canvasLocation" x="-321.37404580152668" y="2.8169014084507045"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="u7V-v9-y7R"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="house" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

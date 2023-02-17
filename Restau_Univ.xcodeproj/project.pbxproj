@@ -15,6 +15,7 @@
 		CBEBF30C299E4E5600F5F72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEBF30B299E4E5600F5F72D /* Assets.xcassets */; };
 		CBEBF316299E7D2E00F5F72D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBF315299E7D2E00F5F72D /* LogInViewController.swift */; };
 		CBEBF318299E7D4E00F5F72D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBF317299E7D4E00F5F72D /* RegisterViewController.swift */; };
+		CBEBF31B299F852000F5F72D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBF319299F852000F5F72D /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CBEBF30B299E4E5600F5F72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Assets.xcassets; sourceTree = "<group>"; };
 		CBEBF315299E7D2E00F5F72D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CBEBF317299E7D4E00F5F72D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CBEBF319299F852000F5F72D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				CBEBF2FB299E4E0900F5F72D /* WelcomeViewController.swift */,
 				CBEBF315299E7D2E00F5F72D /* LogInViewController.swift */,
 				CBEBF317299E7D4E00F5F72D /* RegisterViewController.swift */,
+				CBEBF319299F852000F5F72D /* HomePageViewController.swift */,
 				CBEBF2FD299E4E0900F5F72D /* Main.storyboard */,
 				CBEBF30B299E4E5600F5F72D /* Assets.xcassets */,
 				CBEBF302299E4E0C00F5F72D /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				CBEBF316299E7D2E00F5F72D /* LogInViewController.swift in Sources */,
 				CBEBF318299E7D4E00F5F72D /* RegisterViewController.swift in Sources */,
+				CBEBF31B299F852000F5F72D /* HomePageViewController.swift in Sources */,
 				CBEBF2FC299E4E0900F5F72D /* WelcomeViewController.swift in Sources */,
 				CBEBF2F8299E4E0900F5F72D /* AppDelegate.swift in Sources */,
 				CBEBF2FA299E4E0900F5F72D /* SceneDelegate.swift in Sources */,
