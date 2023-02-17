@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
 
@@ -14,14 +16,28 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
-        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         
+//        SVProgressHUD.show()
         
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) {
+            (user, error) in
+            
+            if error != nil {
+                print("Error registering user \(error!)")
+            }
+            else {
+//                SVProgressHUD.dismiss()
+                print("User registered with success")
+                self.performSegue(withIdentifier: "goToHomePage", sender: self)
+            }
+        }
         
     }
     

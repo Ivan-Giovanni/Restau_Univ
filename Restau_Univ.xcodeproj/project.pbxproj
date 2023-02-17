@@ -44,9 +44,11 @@
 		CBEBF353299F88C500F5F72D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CBEBF352299F88C500F5F72D /* FirebaseStorage */; };
 		CBEBF355299F88C600F5F72D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = CBEBF354299F88C600F5F72D /* FirebaseStorageCombine-Community */; };
 		CBEBF357299F8C7F00F5F72D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBEBF356299F8C7F00F5F72D /* GoogleService-Info.plist */; };
+		FD1096F90DD999D9852464B0 /* Pods_Restau_Univ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D816B9AEF21E1F5608175871 /* Pods_Restau_Univ.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0375D51A8E05A1D68D99459C /* Pods-Restau_Univ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restau_Univ.release.xcconfig"; path = "Target Support Files/Pods-Restau_Univ/Pods-Restau_Univ.release.xcconfig"; sourceTree = "<group>"; };
 		CBEBF2F4299E4E0900F5F72D /* Restau_Univ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restau_Univ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEBF2F7299E4E0900F5F72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEBF2F9299E4E0900F5F72D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		CBEBF317299E7D4E00F5F72D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CBEBF319299F852000F5F72D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		CBEBF356299F8C7F00F5F72D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D816B9AEF21E1F5608175871 /* Pods_Restau_Univ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restau_Univ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AB898767665D435FE38F0B /* Pods-Restau_Univ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restau_Univ.debug.xcconfig"; path = "Target Support Files/Pods-Restau_Univ/Pods-Restau_Univ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,17 +97,38 @@
 				CBEBF33B299F88BC00F5F72D /* FirebaseFirestoreCombine-Community in Frameworks */,
 				CBEBF34B299F88C100F5F72D /* FirebaseMessaging in Frameworks */,
 				CBEBF347299F88C000F5F72D /* FirebaseInstallations in Frameworks */,
+				FD1096F90DD999D9852464B0 /* Pods_Restau_Univ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29D53C609D1F381355DF632D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9AB898767665D435FE38F0B /* Pods-Restau_Univ.debug.xcconfig */,
+				0375D51A8E05A1D68D99459C /* Pods-Restau_Univ.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		67A713572A745D464C8032AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D816B9AEF21E1F5608175871 /* Pods_Restau_Univ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBEBF2EB299E4E0900F5F72D = {
 			isa = PBXGroup;
 			children = (
 				CBEBF2F6299E4E0900F5F72D /* Restau_Univ */,
 				CBEBF2F5299E4E0900F5F72D /* Products */,
+				29D53C609D1F381355DF632D /* Pods */,
+				67A713572A745D464C8032AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBEBF308299E4E0C00F5F72D /* Build configuration list for PBXNativeTarget "Restau_Univ" */;
 			buildPhases = (
+				82DB6E8E9CD8E438F29111AF /* [CP] Check Pods Manifest.lock */,
 				CBEBF2F0299E4E0900F5F72D /* Sources */,
 				CBEBF2F1299E4E0900F5F72D /* Frameworks */,
 				CBEBF2F2299E4E0900F5F72D /* Resources */,
+				C093EDEEC52F1CA0CD09891F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +258,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82DB6E8E9CD8E438F29111AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Restau_Univ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C093EDEEC52F1CA0CD09891F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Restau_Univ/Pods-Restau_Univ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Restau_Univ/Pods-Restau_Univ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Restau_Univ/Pods-Restau_Univ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBEBF2F0299E4E0900F5F72D /* Sources */ = {
@@ -384,6 +453,7 @@
 		};
 		CBEBF309299E4E0C00F5F72D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9AB898767665D435FE38F0B /* Pods-Restau_Univ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,6 +484,7 @@
 		};
 		CBEBF30A299E4E0C00F5F72D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0375D51A8E05A1D68D99459C /* Pods-Restau_Univ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
