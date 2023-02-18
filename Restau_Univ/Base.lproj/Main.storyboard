@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JGL-Tt-3w6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RKy-PY-u7u">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -148,7 +148,7 @@
             <objects>
                 <tableViewController id="dlp-sf-Yby" userLabel="HomePageViewController" customClass="HomePageViewController" customModule="Restau_Univ" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="h2y-Zg-PnB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="851.99999999999989"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="lBc-6L-HOK" userLabel="TopView">
@@ -324,28 +324,9 @@
             </objects>
             <point key="canvasLocation" x="418" y="3"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="0Wp-Pf-9ZV">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JGL-Tt-3w6" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kba-2X-Qnj">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="RKy-PY-u7u" kind="relationship" relationship="viewControllers" id="Hnp-lf-2GZ"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfb-TG-MpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-321.37404580152668" y="2.8169014084507045"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hB9-jU-ETd"/>
+        <segue reference="qid-yf-rh9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image1" width="630" height="315"/>
